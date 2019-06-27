@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Title -->
+    <title>IFES TV</title>
+    <!--links -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css" type="text/css">
+    <script src="JS/script.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+    
+<script type="text/javascript">
+        jQuery(window).load(function($){
+            atualizaRelogio();
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.2/mqttws31.min.js" type="text/javascript"></script>
+    <script src="JS/mqtt.js" type="text/javascript"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js"></script>
+	<script src="JS/jquery.rss.min.js"></script>
+	
+	<script>
+	jQuery(function($) {
+	$("#rss-feeds").rss("http://rss.cnn.com/rss/edition.rss",
+	      {
+	        entryTemplate:'<li>[{date}] - {title}<br/>{shortBodyPlain}{url}</li>'})
+    })
+  </script>
+
+</head>
+<body>
+    
+    <div id="header">
+        <h1>IFES TV</h1>
+    </div>
+
+    <div id="content">
+
+        <div id="video">
+            <!-- video do youtube -->
+        </div>
+
+        <div id="info">
+            <h2>Previsão do tempo</h2>
+            <div id="previsão">
+                <div id="cont_b3a8081fe75ae51776169c5c13dee6bf">
+                    <script type="text/javascript" async src="https://www.tempo.com/wid_loader/b3a8081fe75ae51776169c5c13dee6bf"></script>
+                </div>
+            </div>
+
+            <div id="temperatura">
+                <h2>Temperatura atual</h2>
+                <div class="wrapper">
+                
+                    <form id="connection-information-form" hidden="True">	
+                        <input id="host" type="text" name="host" value="localhost"><br>
+                        <input id="port" type="text" name="port" value="9001"><br>
+                        <input id="topic" type="text" name="topic" value="test"><br><br>               
+                    </form>
+                    <div id="messages"></div>
+                </div>
+               <script>startConnect()</script>
+            </div>
+
+            <div id="relogio">
+                <div>
+                    <output id="data" style="font-family: 'arial black', 'avant garde'; font-size: 50px;"></output>
+                </div>
+                <div>
+                    <output id="hora" style="font-family: 'arial black', 'avant garde'; font-size: 50px;"></output>				
+                </div>			
+            </div>
+
+        </div>
+
+    </div>
+    
+    <div id="footer"> 
+        <div id="rss-feeds"></div>
+    </div>
+</body>
+</html>
