@@ -23,3 +23,4 @@ O código recebe informações do sensor DHT11 e envia por meio de MQTT para a R
 
 Para Configurar o modo _kiosk_ apenas aplicamos o necessário de alguns tutoriais da internet.
 
+### Qualquer dúvida ou sugestão fiquem a vontade.
