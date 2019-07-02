@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>mqtt-demo: A simple web application that can subscribe to topics from an MQTT broker over websockets</title>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.2/mqttws31.min.js" type="text/javascript"></script>
+      <script src="mqtt.js" type="text/javascript"></script>
+   </head>
+   <body>
+      <div class="wrapper">
+         <h1>mqtt-demo</h1>
+	<form id="connection-information-form" hidden="True">	
+		<input id="host" type="text" name="host" value="raspberrypi.local"><br>
+		<input id="port" type="text" name="port" value="9001"><br>
+		<input id="topic" type="text" name="topic" value="test"><br><br>
+		
+         </form>
+         <div id="messages"></div>
+      </div>
+	<script>startConnect()</script>
+   </body>
+</html>

@@ -1,3 +1,7 @@
+html {
+    margin: 0;
+    padding: 0;
+}
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: #15842a;
@@ -10,26 +14,46 @@ body {
 #header {    
     width: 100%;
     height: 20%;
+    margin: 0;
+    padding: 0;
     float: left;
+    background-color: white;
+}
+#header img {
+    float: left;
+    padding-top: 10px;
+    padding-right: 720px;
 }
 #header h1 {
-    color: white;
+    color: green;
     text-align: center;
+    float: left;
 }
 
 #content {
-    height: 50%;
-    float: left;
+    height: 100%;    
     width: 100%;
-    
+    margin: 0;
+    padding: 0;
+    float: left;
+    background-color: #fcaecc;
 }
-#content #video {
+#content #esquerda {
     float: left;
     width: 68%;
-    padding-left: 10px;
-    
-    
+    height: 100%;
+    color: green;
+    padding-top: 13px;
+    background-color: #bee6fd;
 }
+#content #esquerda #video {
+    padding-left: 10px;
+}
+#content #esquerda #rss-feeds {
+    
+    font-size: 25px;
+}
+
 #content #info {
     float: left;
     color: white;
@@ -37,26 +61,15 @@ body {
     font-size: 20px;
     width: 30%;
     padding-left: 20px;
-    
+    padding-right: 18px;
+    height: 100%;
+    background-color: #fcaecc;    
+}
+#content #info #temperatura {
+    height: 150px;
 }
 #content #info #relogio {
     padding-top: 20px;
 }
- 
 
-#footer {
-    height: 30%;
-    width: 100%;
-    float: left;
-}
-#footer #footer-title {
-    color: white;
-    padding-left: 10px;
-    font-size: 20px;
-}
-#footer #message p {
-    text-align: center;
-    color: white;
-    font-weight: bolder;
-    font-size: 40px;
-}
+
