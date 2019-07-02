@@ -1,4 +1,4 @@
-var listVideos = ['QEB_pubP9Vk', 'XREYt6K4m_Q'];
+var listVideos = ['QEB_pubP9Vk', 'XREYt6K4m_Q', 'vwhew4LZPsk'];
 
 
 
@@ -71,5 +71,3 @@ function atualizaRelogio(){
 
   setTimeout("atualizaRelogio()",1000);
 }
-
-
