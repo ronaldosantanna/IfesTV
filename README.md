@@ -5,10 +5,11 @@ Desse jeito, a raspberry ligada a TV recebe informações de um ou vários senso
 
 Toda a configuração foi pesquisada na internet e aplicada para este projeto. Aqui tentaremos juntar todas as informações necessárias para a configuração do projeto.
 
+A imagem do sistema já está completa e configurada para uso.
+
 ## Hardware
-* Raspberry pi + Raspbian
-* [Mosquitto MQTT Server](https://randomnerdtutorials.com/how-to-install-mosquitto-broker-on-raspberry-pi/)
-* Esp8266
+* Raspberry pi + Raspbian [(Img do sistema)](https://drive.google.com/open?id=16IvTq7KXVeJWATDrFhQsSftASu8AablH)
+* Esp8266 + [Mosquitto MQTT Server](https://randomnerdtutorials.com/how-to-install-mosquitto-broker-on-raspberry-pi/)
 * DHT11
 
 ## Configuração do site
