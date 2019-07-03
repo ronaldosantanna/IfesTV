@@ -26,7 +26,8 @@ Para Configurar o modo _kiosk_ apenas aplicamos o necessário de alguns tutoriai
 ### Qualquer dúvida ou sugestão fiquem a vontade.
 
 # TODO
-* Colocar tutorial de como alterar video, avisos, frases, imagem...
-* Upload da imagem do rpi.
-* Upload da placa utilizada.
-* Circuito para alimentação.
+
+- [ ] Colocar tutorial de como alterar video, avisos, frases, imagem...
+- [ ] Upload da imagem do rpi.
+- [ ] Upload da placa utilizada.
+- [ ] Circuito para alimentação.
