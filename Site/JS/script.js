@@ -1,4 +1,8 @@
-var listVideos = ['QEB_pubP9Vk', 'XREYt6K4m_Q'];
+//Record News = PBxK-PaOSEg // SBT Brasilia = wMDqFzSTmc0
+
+//Para alterar o vídeo coloque o valor da url após o "=". EX: https://www.youtube.com/watch?v=wMDqFzSTmc0
+//o valor é "wMDqFzSTmc0".
+var listVideos = ['PBxK-PaOSEg','QEB_pubP9Vk', 'XREYt6K4m_Q', 'vwhew4LZPsk','4hjjyBgsyo0'];
 
 
 
@@ -14,8 +18,8 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 var player;
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('video', {
-    height: '720',
-    width: '1280',
+    height: '65%',
+    width: '98%',
     control: false,
     videoId: listVideos[0],
     events: {
@@ -71,5 +75,3 @@ function atualizaRelogio(){
 
   setTimeout("atualizaRelogio()",1000);
 }
-
-

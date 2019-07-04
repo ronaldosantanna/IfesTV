@@ -1,0 +1,105 @@
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #000000;
+    height: 93%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+#header {    
+    width: 100%;
+    height: 7%;
+    margin: 0;
+    padding: 0;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    background-color: white;
+}
+#header img {
+    float: left;
+    padding-top: 10px;
+    padding-right: 720px;
+}
+#header h1 {
+    color: green;
+    text-align: center;
+    float: left;
+    font-size: 25px;
+}
+
+#content {
+    height: 100%;    
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    float: left;
+    background-color: #fcaecc;
+}
+#content #esquerda {
+    float: left;
+    width: 70%;
+    height: 100%;
+    color: green;
+    background-color: #bee6fd;
+}
+#content #esquerda #video {
+    width: 95%;
+    
+    padding-left: 10px;
+    padding-top: 10px;
+}
+#content #info {
+    float: left;
+    color: white;
+    font-size: 20px;
+    width: 30%;
+    height: 100%;  
+    text-align: center;
+}
+#content #info #previsao {
+    height: 100%;
+    width: 80%;
+}
+#content #info #cont_b3a8081fe75ae51776169c5c13dee6bf {
+    height: 80%;
+    width: 80%;
+}
+#content #info #temperatura {
+    height: 15%;
+    width: 100%;
+}
+#content #info #relogio {
+    padding-top: 20px;
+}
+#content #info #avisos {
+    padding-top: 20px;
+}
+#content #baixo {
+    width: 100%;
+    height: 190px;
+    clear: left;
+}
+#content #esquerda #baixo #rss-feeds {
+    height: 50%;
+    font-size: 125%;
+    width: 75%;
+    float: left;
+}
+#content #esquerda #baixo img {
+    height: 20%;
+    width: 20%;
+    float: left;
+    text-align: right;
+    padding: 1%;
+}
+
+
