@@ -1,9 +1,26 @@
 //Record News = PBxK-PaOSEg // SBT Brasilia = wMDqFzSTmc0
 
-//Para alterar o vídeo coloque o valor da url após o "=". EX: https://www.youtube.com/watch?v=wMDqFzSTmc0
+//Para alterar o vídeo coloque o valor da url após o "=". 
+//EX: https://www.youtube.com/watch?v=wMDqFzSTmc0
 //o valor é "wMDqFzSTmc0".
-var listVideos = ['PBxK-PaOSEg','QEB_pubP9Vk', 'XREYt6K4m_Q', 'vwhew4LZPsk','4hjjyBgsyo0'];
 
+var videos = 'PBxK-PaOSEg';
+
+//Para alterar a frase do dia insira a nova frase entre as aspas duplas. 
+//EX: var frase = "Tudo que vai volta";
+//A frase sempre tem de estar entre aspas, podendo ser simples ou duplas.
+//Por padrão coloque aspas duplas, mas se dentro da frase aparecer 
+//aspas duplas coloque aspas simples.
+//EX de uma citação: '"A situação da Grécia é crítica"'
+
+var frase = "Nunca desista das coisas que fazem você sorrir";
+
+//Para alterar os avisos siga o mesmo padrão da mudança de frase, 
+//caso tenho menos que 3 avisos apenas apague o texto dentro das aspas duplas
+//EX: var aviso2 = "";
+
+var aviso1 = "Não haverá aula dia 7 por motivos de detetização do campus";
+var aviso2 = 'Dia 21 ocorrerá o evento "Semana Cultural" no campus';
 
 
 // 2. This code loads the IFrame Player API code asynchronously.
@@ -21,7 +38,7 @@ function onYouTubeIframeAPIReady() {
     height: '65%',
     width: '98%',
     control: false,
-    videoId: listVideos[0],
+    videoId: videos,
     events: {
       'onReady': onPlayerReady,
       'onStateChange': onPlayerStateChange
@@ -31,6 +48,7 @@ function onYouTubeIframeAPIReady() {
 
 // 4. The API will call this function when the video player is ready.
 function onPlayerReady(event) {
+  event.target.setVolume(100);
   event.target.playVideo();
 }
 
@@ -75,3 +93,12 @@ function atualizaRelogio(){
 
   setTimeout("atualizaRelogio()",1000);
 }
+
+
+
+document.getElementById("avisos").innerHTML += "<p>" + aviso1 + "</p>";
+document.getElementById("avisos").innerHTML += "<p>" + aviso2 + "</p>";
+
+
+
+document.getElementById("frase").innerHTML += "<marquee>" + frase + "</marquee>";

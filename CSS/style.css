@@ -52,10 +52,10 @@ body {
     background-color: #bee6fd;
 }
 #content #esquerda #video {
-    width: 95%;
+    width: 85%;
     
-    padding-left: 10px;
-    padding-top: 10px;
+    padding-left: 110px;
+    padding-top: 20px;
 }
 #content #info {
     float: left;
