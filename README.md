@@ -22,7 +22,7 @@ Para alterar seu conteúdo, por enquanto, temos que acessá-lo remotamente e alt
 2. Conectando pelo hostname fica ´ssh pi@rpi.local´ 
 3. No terminal digitamos a senha.
  Agora vamos modificar o necessário. Para mudar um arquivo vamos editar pelo editor nano e precisamos ir até o local do arquivo.
-4. ´sudo nano Desktop/IfesTV/JS/script.js´
+4. ´´´sudo nano Desktop/IfesTV/JS/script.js´´´
  Para navegar entre o texto usamos somente as setas do teclado.
 5. Ao alterar alguma variavel e concluirmos as alterações vamos salvar apertando ´ctrl + o´. Agora vamos sair apertando ´ctrl + x´.
  Para aplicar as mudanças na pagina ela deve ser recarregada. O jeito mais fácil é reiniciando o sistema.
