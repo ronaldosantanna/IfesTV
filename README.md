@@ -1,7 +1,7 @@
 # IfesTV
 IfesTV é um site local, no estilo _kiosk_ (Raspberry pi ligado a TV), que exibe videos do youtube, notícias, avisos locais, clima e temperatura ambiente.
 
-> Criado por alunos do IFES - Campus Guarapari. Pelos alunos João Alves, Kevyn Marins e Ronaldo Sant'Anna.
+> Criado por alunos do IFES - Campus Guarapari. Pelos alunos João Alves, Kevyn Marins e Ronaldo Sant'Anna. [Contato](https://github.com/ronaldosantanna/IfesTV#qualquer-dúvida-ou-sugestão-fiquem-a-vontade)
 
 Utilizamos uma ESP8266 para ligar o sensor local de temperatura DHT11, no qual serve para uma estação remota via comunicalção MQTT com o raspberry pi.
 Desse jeito, a raspberry ligada a TV recebe informações de um ou vários sensores em um ou mais prédios e também informações da internet e exibe na TV.
@@ -40,3 +40,5 @@ O código recebe informações do sensor DHT11 e envia por meio de MQTT para a R
 Para Configurar o modo _kiosk_ apenas aplicamos o necessário de alguns tutoriais da internet.
 
 ### Qualquer dúvida ou sugestão fiquem a vontade.
+Este [formulário](https://forms.gle/AasFBRNRWcPVzgP98) contém um um jeito rápido de contato. Caso se sintam a vontade podem criar um chamado pelo [Issues](https://github.com/ronaldosantanna/IfesTV/issues) do próprio Github.
+Ou, caso prefiram deixo meu email para contato: ronaldo.santanna@live.com
