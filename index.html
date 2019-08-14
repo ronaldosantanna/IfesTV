@@ -59,12 +59,11 @@
                     <script type="text/javascript" async src="https://www.tempo.com/wid_loader/b3a8081fe75ae51776169c5c13dee6bf"></script>
                 </div>
             </div>
-
+            <h2>Temperatura atual:</h2>
             <div id="temperatura">
-                <h2>Temperatura atual</h2>
                 <div class="wrapper">
-                
-                    <form id="connection-information-form" hidden="True">	
+                    <form id="connection-information-form" style="display:none";>	
+                        <!-- <input id="host" type="text" name="host" value="localhost"><br> -->
                         <input id="host" type="text" name="host" value="172.17.22.188"><br>
                         <input id="port" type="text" name="port" value="9001"><br>
                         <input id="topic" type="text" name="topic" value="test"><br><br>               
@@ -76,21 +75,17 @@
 
             <div id="relogio">
                 <div>
-                    <output id="data" style="font-family: 'arial black', 'avant garde'; font-size: 50px;"></output>
+                    <output id="data" style="font-family: 'arial black', 'avant garde';"></output>
                 </div>
                 <div>
-                    <output id="hora" style="font-family: 'arial black', 'avant garde'; font-size: 50px;"></output>				
+                    <output id="hora" style="font-family: 'arial black', 'avant garde';"></output>				
                 </div>			
             </div>
 
-
-            <div id="avisos">
-                <h1>Avisos:</h1>                              
-            </div>
-
-            <div id="frase">
-                <h2>Frase do Dia:</h2>
-            </div>
+            <h1>Avisos:</h1> 
+            <div id="avisos"></div>
+            <h1>Frase do Dia:</h1>
+            <div id="frase"></div>
         </div>
     </div>
     <script src="JS/script.js"></script>

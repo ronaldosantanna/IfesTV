@@ -47,7 +47,7 @@ function onConnectionLost(responseObject) {
 // Called when a message arrives
 function onMessageArrived(message) {
     console.log("onMessageArrived: " + message.payloadString);
-    document.getElementById("messages").innerHTML = '<span>Temperatura atual: ' + message.payloadString + '</span><br/>';
+    document.getElementById("messages").innerHTML = '<span>' + message.payloadString + '</span><br/>';
 }
 
 // Called when the disconnection button is pressed
