@@ -1,4 +1,5 @@
 # IfesTV
+### Esta Branch é exclusiva do IFES. Os arquivos aqui serão os mesmos da TV presente no IFES.
 IfesTV é um site local, no estilo _kiosk_ (Raspberry pi ligado a TV), que exibe videos do youtube, notícias, avisos locais, clima e temperatura ambiente.
 
 > Criado por alunos do IFES - Campus Guarapari. Pelos alunos João Alves, Kevyn Marins e Ronaldo Sant'Anna. [Contato](https://github.com/ronaldosantanna/IfesTV#qualquer-dúvida-ou-sugestão-fiquem-a-vontade)
@@ -19,10 +20,10 @@ A imagem do sistema já está completa e configurada para uso.
 O site foi básico apenas para exibir o necessário em nosso projeto. Acima temos os arquivos da página e suas dependencias.
 Para editá-lo é simples e qualquer pesquisa na internet já se encontra o passo a passo da criação.
 
-> Para alterar seu conteúdo, por enquanto, temos que acessá-lo remotamente e alterar o valor dentro de seus arquivos de configuração.
+> Para alterar seu conteúdo, por enquanto, temos que acessá-lo remotamente e alterar o valor dentro de seus arquivos de configuração. NO IFES O UNICO LOCAL COM ACESSO REMOTO É A SALA B-307 OU O PRÓPRIO TI.
 > 1. Para isso vamos conectar via terminal (pelo linux), ou [Putty](https://the.earth.li/~sgtatham/putty/latest/w32/putty.exe) (windows,   mas teste se seu computador não tem ssh, acessando o cmd e digitando ssh).
- Primeiro devemos descobrir o endereço ip da raspberry. Ou usar o *hostname* dela que é rpi.
-> 2. Conectando pelo hostname fica `ssh pi@rpi.local` 
+ Primeiro devemos descobrir o endereço ip da raspberry. No IFES fixamos o IP dela para 172.17.22.188.
+> 2. Conectando pelo hostname fica `ssh pi@172.17.22.188` 
 > 3. No terminal digitamos a senha.
  Agora vamos modificar o necessário. Para mudar um arquivo vamos editar pelo editor nano e precisamos ir até o local do arquivo.
 > 4. `sudo nano Desktop/IfesTV/JS/script.js`
