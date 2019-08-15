@@ -86,10 +86,12 @@ function atualizaRelogio(){
   if (vsegundo < 10){ vsegundo = "0" + vsegundo;}
 
   dataFormat = vdia + " / " + vmes + " / " + vano;
-  horaFormat = vhora + " : " + vminuto + " : " + vsegundo;
+  // horaFormat = vhora + " : " + vminuto + " : " + vsegundo;
+  horaFormat = vhora + " : " + vminuto;
 
   document.getElementById("data").innerHTML = dataFormat;
   document.getElementById("hora").innerHTML = horaFormat;
+  document.getElementById("seg").innerHTML = ": " + vsegundo;
 
   setTimeout("atualizaRelogio()",1000);
 }
